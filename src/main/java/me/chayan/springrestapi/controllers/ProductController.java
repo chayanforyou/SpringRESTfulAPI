@@ -38,7 +38,7 @@ public class ProductController {
     }
 
     @RequestMapping(value = {"/product/delete/{id}" }, method = DELETE)
-    public ResponseEntity<?> deleteSimBillTransaction (@PathVariable(name = "id") Long id){
+    public ResponseEntity<?> delete (@PathVariable(name = "id") Long id){
         return this.service.delete(id);
     }
 
